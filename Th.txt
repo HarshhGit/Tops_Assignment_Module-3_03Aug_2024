@@ -1,0 +1,142 @@
+
+Q.1] What is List? How will you reverse  a list? 
+ANS : Python knows a number of compound data types, used to group togather other values.
+the most versatile is the list, which can be written as a list comma-separated values(items)
+between square brackets[].List are used to store multiple items in single variable.List items 
+are ordered, changeable and allow duplicate values.
+List items are indexed, the first item has index [0] and second item has index [1] as so on.
+--> To reverse a list there are several methods some of are as bellow:-
+1] using slicing: Slicing with negative indexing'[::-1]' creates a new list that is the reverse of the original list.
+Ex: 
+my_list = [1, 2, 3, 4, 5]
+reversed_list = my_list[::-1]
+print(reversed_list)
+# Output: [5, 4, 3, 2, 1]
+2] using the 'reverse()' method:
+Ex:
+my_list = [1, 2, 3, 4, 5]
+my_list.reverse()
+print(my_list)
+# Output: [5, 4, 3, 2, 1]
+
+----------------------------------------------------------------------------------------------------------------------
+Q.2]Differentiate between append () and extend () methods?
+ANS:
+'append()' adds its argument as a single element to the end of the list, so the length of the list increases by one.
+'append()' is used when you want to add single item to the list.
+Ex. 'append()'
+my_list = [1, 2, 3]
+my_list.append(4)
+print(my_list)  # Output: [1, 2, 3, 4]
+'extend()' iterates over its argument, adding each element to the list, so the length of the list increases by however. 
+many elements were in the iterable argument.
+'extend()' is used when you wnat to concatenate anothe list or any iterable to the end of the list.
+Ex. 'extend()'
+my_list = [1, 2, 3]
+my_list.extend([4, 5])
+print(my_list)  # Output: [1, 2, 3, 4, 5]
+
+-------------------------------------------------------------------------------------------------------------------------
+Q.3] How will you compare two lists? 
+ANS:
+we can use several ways to compare two list some of are as bellow:
+1] We can use Equality operator'==' that gives True or False according to list elements.
+EX.
+list1 = [1,2,3]
+list2 = [1,2,3]
+list[3,2,1]
+print(list1 == list2) #True
+print(list1 == list3) #False
+
+2]using inequality to check if two lists are not exactly the same '!='.
+Similar to the equality operator, but returns True if at least one corresponding element 
+is different or if the lists have different lengths.
+Ex.
+list1 = [1,2,3]
+list2 = [1,2,3]
+list3 = [3,2,1]
+print(list1 != list2) #False 
+print(list1 != list3) #True
+
+3] using 'all()' that check if all elements of one list are contained within another list.
+Ex.
+list1 = [1,2,3]
+list2 = [1,2,3,4,5]
+
+is_same = all(elem in list2 for elem in list1)
+print(is_same) #True
+
+-------------------------------------------------------------------------------------------------------------------------
+Q.4] What is tuple? Difference between list and tuple.
+ANS:
+A tuple is a collection which is orderd and immutable python objects.
+Tuples are sequences, just like lists.
+----> Difference between tuples and lists:
+Tuples cannot be changed unlike lists.
+Tuples use parentheses, whereas lists use square brackets.
+Tuples are indexed so they can have items with the same value(duplicates).
+Ex.
+tupleex = ("apple","banana","cherry","apple",)
+print(type(tupleex))	#<class 'tuple'>
+
+-------------------------------------------------------------------------------------------------------------------------
+Q.5] How Many Basic Types Of Functions Are Available In Python?
+ANS: 
+Python have mainly 4 types of Functions as bellow:
+1] Built-in Functions
+2] User-define Functions
+3] Lambda Functions
+4] Recursive Functions
+
+---------------------------------------------------------------------------------------------------------------------------
+Q.6] How can you pick a random item from a list or tuple? 
+ANS:
+Using random.randrange()Function
+Using random.choice()Function 
+
+---------------------------------------------------------------------------------------------------------------------------
+Q.7] How can you pick a random item from a range? 
+ANS:
+To pick random item from a range we can use the 'random.choice()','random.randrange()'
+from the 'random module'
+
+---------------------------------------------------------------------------------------------------------------------------
+Q.8] How can you get a random number in python?
+ANS:
+Using random.random() Function or random.randint()
+
+---------------------------------------------------------------------------------------------------------------------------
+Q.9] How will you set the starting value in generating random numbers?
+ANS:
+To set the starting value, or seed for generating random numbers in python we can use
+'random.seed()' function from random module.
+
+---------------------------------------------------------------------------------------------------------------------------
+Q.10] How will you randomizes the items of a list in place? 
+ANS:
+To randomize the items of list in place we can use the 'random.shuffle()'function.
+
+
+---------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
