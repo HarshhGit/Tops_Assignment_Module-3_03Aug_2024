@@ -44,7 +44,7 @@ we can use several ways to compare two list some of are as bellow:
 EX.
 list1 = [1,2,3]
 list2 = [1,2,3]
-list[3,2,1]
+list3=[3,2,1]
 print(list1 == list2) #True
 print(list1 == list3) #False
 
@@ -58,13 +58,6 @@ list3 = [3,2,1]
 print(list1 != list2) #False 
 print(list1 != list3) #True
 
-3] using 'all()' that check if all elements of one list are contained within another list.
-Ex.
-list1 = [1,2,3]
-list2 = [1,2,3,4,5]
-
-is_same = all(elem in list2 for elem in list1)
-print(is_same) #True
 
 -------------------------------------------------------------------------------------------------------------------------
 Q.4] What is tuple? Difference between list and tuple.
